@@ -1,0 +1,86 @@
+.block_one_consult {
+    height: 650px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px !important;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 26px;
+    background-color: #dbd7d3 !important;
+  }
+  .container {
+    gap: 25px;
+    align-items: flex-start;
+  }
+  .container p {
+    text-align: start;
+  }
+  .p-1 {
+    font-weight: 500;
+  }
+  .p-2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .heading_consult {
+    font-size: 42px;
+    color: #dea21b;
+  }
+  .heading_consult span {
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+  }
+  h1, .consult-request{
+    align-self: flex-start;
+  }
+.consult-request {
+    border-radius: 0;
+    background-color: #dea21b;
+    color: white;
+}
+.wrapper-block-one {
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.wrapper-block-one {
+    display: flex;
+    flex-direction: column;
+}
+.block_two_consult {
+    margin: 50px 0;
+}
+.wrapper-block-two > h5 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.consult_cards {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 50px;
+}
+.consult_card {
+    display: flex;
+}
+.consult_card > div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #efefef;
+}
+.consult_card h5 {
+    font-size: 20px;
+}
+.consult_card p {
+    line-height: 25px;
+}
