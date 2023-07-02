@@ -1001,13 +1001,46 @@ footer {
     gap: 10px;
   }
   .footer {
-    gap: 85px;
+    gap: 80px;
   }
   .footer-item-txt p {
     font-size: 13px;
   }
+  .footer > img {
+    width: 210px;
+  }
+}
+@media (max-width: 675px) {
+  .navigation {
+    display: none;
+  }
 }
 @media (max-width: 425px) {
+  #burger {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: right;
+    height: 30px;
+    width: 30px;
+  }
+
+  .block_one strong {
+    font-size: 38px;
+    line-height: 65px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  .container h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .block_two p,
+  .block_five > .container > p {
+    font-size: 23px;
+    text-align: center;
+  }
   .what_we_do {
     width: 100%;
     display: grid;
@@ -1028,17 +1061,78 @@ footer {
   .card-list {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .wrapper-block-one {
+    max-width: 100%;
+    gap: 20px;
+    padding: 20px 20px 0 40px;
+  }
+  .block_one_consult {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .consult-request {
+    width: 90%;
   }
   .articles {
     display: grid !important;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   .footer {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .footer-item-txt {
+    gap: 0;
   }
 }
 @media (max-width: 390px) {
+  .block_one strong {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .btn-secondary {
+    width: 270px;
+    height: 60px;
+    font-size: 17px;
+  }
+  .what_we_do {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .block_five > .container > p {
+    margin-bottom: 0px;
+  }
+
+  .block_three_txt > p,
+  .block-six p,
+  .block-eight p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .block_three_txt > p > b {
+    font-size: 25px;
+  }
+  .question_txt p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .consult-header {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .consult-register {
+    font-size: 18px;
+  }
+  .footer > img {
+    width: 200px;
+  }
 }
 @media (max-width: 375px) {
 }

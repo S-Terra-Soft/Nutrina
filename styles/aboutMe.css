@@ -92,4 +92,9 @@ main > .container {
   .navigation {
     display: none;
   }
+  .about {
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
