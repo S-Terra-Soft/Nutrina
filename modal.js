@@ -17,11 +17,11 @@ document.querySelector("#my_modal").addEventListener("click", (event) => {
 });
 ///////////////////////////////////////2
 document.getElementById("open_modal2").addEventListener("click", function () {
-  console.log("click");
   document.getElementById("my_modal2").classList.add("open");
 });
 
 document.getElementById("closeModal2").addEventListener("click", function () {
+
   document.getElementById("my_modal2").classList.remove("open");
 });
 
@@ -42,6 +42,7 @@ document.getElementById("open_modal3").addEventListener("click", function () {
 
 document.getElementById("closeModal3").addEventListener("click", function () {
   document.getElementById("my_modal3").classList.remove("open");
+
 });
 
 document
@@ -60,6 +61,7 @@ document.getElementById("open_modal4").addEventListener("click", function () {
 });
 
 document.getElementById("closeModal4").addEventListener("click", function () {
+
   document.getElementById("my_modal4").classList.remove("open");
 });
 

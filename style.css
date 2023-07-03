@@ -282,6 +282,7 @@ nav {
 }
 
 .closeModal {
+
   position: absolute;
   top: 25px;
   right: 20px;
@@ -314,6 +315,7 @@ nav {
 .closeModal::after {
   transform: rotate(-45deg);
 }
+
 
 .we_do_block {
   display: flex;
@@ -820,6 +822,7 @@ footer {
   font-size: 20px;
   color: white;
 }
+
 .footer-item-txt {
   margin-top: 10px;
   list-style: none;
@@ -867,6 +870,7 @@ footer {
   background-color: white;
   z-index: 9999;
 }
+
 @media (max-width: 1024px) {
   h3 {
     font-size: 40px;
@@ -1024,6 +1028,9 @@ footer {
   .navigation {
     display: none;
   }
+
+}
+@media (max-width: 425px) {
   #burger {
     border: none;
     background: none;
@@ -1059,6 +1066,11 @@ footer {
     font-size: 38px;
     line-height: 65px;
   } */
+
+  .block_one strong {
+    font-size: 38px;
+    line-height: 65px;
+  }
   h3 {
     font-size: 35px;
   }
