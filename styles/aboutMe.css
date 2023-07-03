@@ -113,4 +113,9 @@ main > .container {
   #background {
     top: 10vw;
   }
+  .about {
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
