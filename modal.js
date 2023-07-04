@@ -20,7 +20,8 @@ document.getElementById("open_modal2").addEventListener("click", function () {
   document.getElementById("my_modal2").classList.add("open");
 });
 
-document.getElementById("closeModal").addEventListener("click", function () {
+document.getElementById("closeModal2").addEventListener("click", function () {
+
   document.getElementById("my_modal2").classList.remove("open");
 });
 
@@ -39,8 +40,9 @@ document.getElementById("open_modal3").addEventListener("click", function () {
   document.getElementById("my_modal3").classList.add("open");
 });
 
-document.getElementById("closeModal").addEventListener("click", function () {
-  document.getElementById("my_modal").classList.remove("open");
+document.getElementById("closeModal3").addEventListener("click", function () {
+  document.getElementById("my_modal3").classList.remove("open");
+
 });
 
 document
@@ -58,7 +60,8 @@ document.getElementById("open_modal4").addEventListener("click", function () {
   document.getElementById("my_modal4").classList.add("open");
 });
 
-document.getElementById("closeModal").addEventListener("click", function () {
+document.getElementById("closeModal4").addEventListener("click", function () {
+
   document.getElementById("my_modal4").classList.remove("open");
 });
 

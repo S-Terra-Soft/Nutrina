@@ -268,20 +268,21 @@ nav {
   transition: transform 0.8s;
 }
 .modal.open,
-.modal.open2,
-.modal.open3,
-.modal.open4 {
+.modal2.open,
+.modal3.open,
+.modal4.open {
   visibility: visible;
   opacity: 1;
 }
 .modal.open .modal_box,
-.modal.open2 .modal_box2,
-.modal.open3 .modal_box3,
-.modal.open4 .modal_box4 {
+.modal2.open .modal_box2,
+.modal3.open .modal_box3,
+.modal4.open .modal_box4 {
   transform: scale(1);
 }
 
-#closeModal {
+.closeModal {
+
   position: absolute;
   top: 25px;
   right: 20px;
@@ -296,8 +297,8 @@ nav {
   }
 }
 
-#closeModal::before,
-#closeModal::after {
+.closeModal::before,
+.closeModal::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -307,13 +308,14 @@ nav {
   background: #000;
 }
 
-#closeModal::before {
+.closeModal::before {
   transform: rotate(45deg);
 }
 
-#closeModal::after {
+.closeModal::after {
   transform: rotate(-45deg);
 }
+
 
 .we_do_block {
   display: flex;
@@ -820,6 +822,7 @@ footer {
   font-size: 20px;
   color: white;
 }
+
 .footer-item-txt {
   margin-top: 10px;
   list-style: none;
@@ -857,6 +860,17 @@ footer {
 #footer-bottom {
   height: 10px;
 }
+.slider {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
 @media (max-width: 1024px) {
   h3 {
     font-size: 40px;
@@ -1014,6 +1028,7 @@ footer {
   .navigation {
     display: none;
   }
+
 }
 @media (max-width: 425px) {
   #burger {
@@ -1024,6 +1039,33 @@ footer {
     height: 30px;
     width: 30px;
   }
+  .slider {
+    /* Расскоментировать чтобы увидеть блок */
+    /* display: flex;  */
+    justify-content: center;
+    align-items: center;
+  }
+  .slider ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .closeSlider {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .block_one strong {
+    font-size: 30px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 425px) {
+  /* .block_one strong {
+    font-size: 38px;
+    line-height: 65px;
+  } */
 
   .block_one strong {
     font-size: 38px;
