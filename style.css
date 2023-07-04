@@ -280,9 +280,16 @@ nav {
 .modal4.open .modal_box4 {
   transform: scale(1);
 }
+/* h5 {
+  font-size: 30px;
+  padding-bottom: 20px;
+} */
+p .modtext {
+  font-size: 18px;
+  color: #000;
+}
 
 .closeModal {
-
   position: absolute;
   top: 25px;
   right: 20px;
@@ -315,7 +322,6 @@ nav {
 .closeModal::after {
   transform: rotate(-45deg);
 }
-
 
 .we_do_block {
   display: flex;
@@ -869,6 +875,8 @@ footer {
   bottom: 0;
   background-color: white;
   z-index: 9999;
+  /* transform: translateX(-100%);
+  transition: transform 0.5s; */
 }
 
 @media (max-width: 1024px) {
@@ -1028,9 +1036,6 @@ footer {
   .navigation {
     display: none;
   }
-
-}
-@media (max-width: 425px) {
   #burger {
     border: none;
     background: none;
@@ -1041,7 +1046,7 @@ footer {
   }
   .slider {
     /* Расскоментировать чтобы увидеть блок */
-    /* display: flex;  */
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -1050,23 +1055,56 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    color: #000;
+  }
+  .slider a {
+    font-size: 25px;
+    font-weight: 600;
   }
   .closeSlider {
     position: absolute;
     top: 15px;
     right: 15px;
   }
+  .closeSlider {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity ease 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .closeSlider::before,
+  .closeSlider::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #000;
+  }
+
+  .closeSlider::before {
+    transform: rotate(45deg);
+  }
+
+  .closeSlider::after {
+    transform: rotate(-45deg);
+  }
+}
+@media (max-width: 425px) {
   .block_one strong {
     font-size: 30px;
     line-height: 55px;
   }
-}
-@media (max-width: 425px) {
-  /* .block_one strong {
-    font-size: 38px;
-    line-height: 65px;
-  } */
-
   .block_one strong {
     font-size: 38px;
     line-height: 65px;
