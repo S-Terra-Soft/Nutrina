@@ -280,13 +280,14 @@ nav {
 .modal4.open .modal_box4 {
   transform: scale(1);
 }
-/* h5 {
+#modalh5 {
   font-size: 30px;
   padding-bottom: 20px;
-} */
-p .modtext {
+  line-height: 30px;
+}
+#modtext {
   font-size: 18px;
-  color: #000;
+  line-height: 25px;
 }
 
 .closeModal {
@@ -814,7 +815,7 @@ footer {
   padding-bottom: 20px;
   align-items: start;
 }
-.footer > img {
+.footer > a > img {
   align-self: center;
   pointer-events: none;
   justify-self: center;
@@ -875,7 +876,7 @@ footer {
   bottom: 0;
   background-color: white;
   z-index: 9999;
-  transform: translateX(-100vw);
+  transform: translateX(-120vw);
   transition: transform 0.5s;
 }
 
@@ -937,7 +938,7 @@ footer {
 }
 @media (max-width: 768px) {
   a {
-    font-size: 15px;
+    font-size: 20px;
   }
   .block_two {
     padding-top: 30px;
@@ -1028,7 +1029,7 @@ footer {
   .footer-item-txt p {
     font-size: 13px;
   }
-  .footer > img {
+  .footer > a > img {
     width: 210px;
   }
 }
@@ -1105,6 +1106,26 @@ footer {
   .closeSlider::after {
     transform: rotate(-45deg);
   }
+  .questions {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 93px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .footer-item-txt {
+    gap: 0;
+  }
+  .footer > a > img {
+    width: 210px;
+    display: grid;
+    align-self: center !important;
+    pointer-events: none;
+    justify-self: center !important;
+  }
 }
 @media (max-width: 425px) {
   .block_one strong {
@@ -1139,10 +1160,21 @@ footer {
     max-width: 300px;
     padding: 10px;
   }
+  #modalh5 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+  #modtext {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+  }
 
   .questions {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 30px;
   }
   .card-list {
     display: grid;
@@ -1165,14 +1197,6 @@ footer {
     display: grid !important;
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-  .footer-item-txt {
-    gap: 0;
   }
 }
 @media (max-width: 390px) {
@@ -1221,4 +1245,45 @@ footer {
   }
 }
 @media (max-width: 375px) {
+  .we_do_img > p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .block_one strong {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .article-header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .article-txt {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .article-info {
+    padding: 0 10px;
+  }
+  .container h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .block_two p,
+  .block_five > .container > p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .questions {
+    padding: 25px 25px;
+  }
+  .question_txt p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
