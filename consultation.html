@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Styles/consultation.css" />
+    <title>Консультации</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./burger.js" defer></script>
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- container = 1180px -->
+      <div class="header container">
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a href=""> Специалисты</a></li>
+            <li><a href=""> Инфо-продукты</a></li>
+            <li id="logo">
+              <a href=""> <img src="./logo/Logo.svg" alt="" /></a>
+            </li>
+            <li><a href=""> Статьи</a></li>
+            <li><a href="consultation.html">Консультации</a></li>
+          </ul>
+        </nav>
+        <button id="burger">
+          <img src="./images/burger_menu.svg" alt="" />
+        </button>
+      </div>
+      <div class="slider">
+        <ul>
+          <li><a href="./aboutMe.html">О себе</a></li>
+          <li><a href="./infoprod.html">Инфо-продукты</a></li>
+          <li><a href="./articles.html">Статьи</a></li>
+          <li><a href="./consultations.html">Консультации</a></li>
+        </ul>
+        <div class="closeSlider"></div>
+      </div>
+    </header>
+    <main>
+      <div class="block_one_consult">
+        <div class="container">
+          <div class="wrapper-block-one">
+            <h1 class="heading_consult">
+              <span>Консультации</span><br />ДЛЯ СПЕЦИАЛИСТОВ
+            </h1>
+            <p class="p-1">
+              Персональное наставничество для специалистов в области здоровья.
+            </p>
+            <p class="p-2">
+              Данный вид консультации подходит для всех специалистов в области
+              здоровья (для нутрициологов, health-коучей, врачей,
+              фитнес-инструкторов и т. д.)
+            </p>
+            <button class="consult-request">Заявка на консультацию</button>
+          </div>
+        </div>
+      </div>
+      <div class="block_two_consult">
+        <div class="container">
+          <div class="wrapper-block-two">
+            <h5>Консультации</h5>
+            <div class="consult_cards">
+              <div class="consult_card">
+                <img src="./images/card-1.png" alt="" />
+                <div>
+                  <h5>Консультация нутрициолога</h5>
+                  <div>
+                    <p>Для тех, кто не знает, с чего начать</p>
+                    <p>8000 RUB</p>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+              </div>
+              <div class="consult_card">
+                <img src="./images/card-2.png" alt="" />
+                <div>
+                  <h5>Консультация нутрициолога Елены Чумаковой</h5>
+                  <div>
+                    <p>Количество мест ограничено</p>
+                    <p>10000 RUB</p>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+              </div>
+              <div class="consult_card">
+                <img src="./images/card-3.png" alt="" />
+                <div>
+                  <h5>Консультация "Педиатр + нутрициолог"</h5>
+                  <div>
+                    <p>Комплексная консультация специалистов</p>
+                    <p>12000 RUB</p>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+              </div>
+              <div class="consult_card">
+                <img src="./images/card-3.png" alt="" />
+                <div>
+                  <h5>Консультация педиатра</h5>
+                  <div>
+                    <p>Помощь маленьким пациентам</p>
+                    <p>8000 RUB</p>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

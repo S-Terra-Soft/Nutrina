@@ -1,0 +1,42 @@
+main > .container {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  gap: 35px;
+}
+.text {
+  font-size: 24px;
+  color: gray;
+}
+.prodcard {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
+  gap: 15px;
+}
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+@media (max-width: 1180px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 675px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+  .navigation {
+    display: none;
+  }
+}
