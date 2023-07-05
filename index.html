@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="./styles/infoprod.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Нутрициология</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./burger.js" defer></script>
     <script src="./modal.js" defer></script>
     <script src="./script.js" defer></script>
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -120,8 +123,8 @@
                   <div class="closeModal" id="closeModal"></div>
 
                   
-                  <h4>Гигиена питания</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                  <h5 id="modalh5">Гигиена питания</h5>
+                  <p id="modtext">Гигиена питания играет важную роль в поддержании здорового образа жизни. Соблюдение принципов гигиены питания, таких как чистота продуктов, безопасность приготовления и хранения, использование чистых инструментов и поверхностей, а также личная гигиена, помогает минимизировать риск возникновения пищевых отравлений и других заболеваний, связанных с пищеварительной системой. Сделайте гигиену питания приоритетом в своей жизни и поддерживайте безопасность и качество пищи, которую вы употребляете. </p>
                 </div>
               </div>
               <div class="we_do_block" id="open_modal2">
@@ -137,8 +140,8 @@
                 <div class="modal_box2">
                   <div class="closeModal" id="closeModal2"></div>
                   
-                  <h5>Разработка рекомендаций по правильному питанию</h5>
-                  <p class="modtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                  <h5 id="modalh5">Разработка рекомендаций по правильному питанию</h5>
+                  <p id="modtext">Разработка рекомендаций по правильному питанию является важным шагом в направлении здорового образа жизни. Правильное питание, основанное на разнообразных продуктах, фруктах и овощах, полезных углеводах, умеренном потреблении жиров и белка, ограничении сахара и соли, поддержании гидратации и умеренности, поможет вам поддерживать здоровье и благополучие на долгие годы. Помните, что каждый человек уникален, поэтому важно находить баланс и прислушиваться к потребностям своего организма при разработке своей индивидуальной диеты.</p>
                 </div>
               </div>
 
@@ -156,8 +159,8 @@
               <div class="modal3" id="my_modal3">
                 <div class="modal_box3">
                   <div class="closeModal" id="closeModal3"></div>
-                  <h4>Исследование связи между пищевыми привычками и психикой</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                  <h5 id="modalh5">Исследование связи между пищевыми привычками и психикой</h5>
+                  <p id="modtext">Исследования показывают, что между пищевыми привычками и психикой существует взаимосвязь. Правильное питание, богатое плодами и овощами, полезными жирами, белком и питательными веществами, может положительно влиять на настроение, уровень стресса, когнитивные функции и общее психическое благополучие. При разработке рекомендаций по питанию следует учитывать не только физические аспекты, но и психологические аспекты, чтобы создать комплексный подход к поддержанию здоровья и благополучия.</p>
                 </div>
               </div>
 
@@ -173,8 +176,8 @@
                 <div class="modal_box4">
                   <div class="closeModal" id="closeModal4"></div>
                   
-                  <h5>Воздействие продуктов на организм</h5>
-                  <p class="modtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam totam obcaecati, molestias mollitia veniam facere modi esse expedita vero, nemo dicta id alias! Aperiam consequuntur quod aspernatur suscipit nostrum perspiciatis!</p>
+                  <h5 id="modalh5">Воздействие продуктов на организм</h5>
+                  <p id="modtext">Продукты питания имеют существенное воздействие на наш организм и здоровье. Выбор правильных продуктов и сбалансированная диета являются ключевыми факторами для поддержания здорового образа жизни. Важно учитывать индивидуальные потребности и рекомендации специалистов при разработке плана питания, чтобы обеспечить оптимальное функционирование организма и достижение общего благополучия.</p>
                 </div>
               </div>
               
@@ -405,7 +408,8 @@
                   <span>"Сбалансированное питание - ключ к здоровью ребенка" </span><br /></li>
               </ul>
             
-            <button class="consult-request">Заявка на консультацию</button>
+            <button class="consult-request"
+            > <a href="https://www.instagram.com/ciumacova.elena/">Заявка на консультацию</a></button>
           </div>
         </div>
         
@@ -434,7 +438,8 @@
                   <span>"Сбалансированное питание - ключ к здоровью ребенка" </span><br /></li>
               </ul>
             
-            <button class="consult-request">Заявка на консультацию</button>
+            <button class="consult-request"
+            > <a href="https://www.instagram.com/ciumacova.elena/">Заявка на консультацию</a></button>
           </div>
         </div>
         
@@ -460,7 +465,7 @@
                 <h5>Трансформационная НутриИгра <br/>
                     “Любовь = Здоровье“</h5>
                 <p>Интерактивная игра  <br/> 150€</p>
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -471,7 +476,7 @@
                 <h5>Трансформационная НутриИгра <br/>
                     “Любовь = Здоровье“</h5>
                 <p>Интерактивная игра  <br/> 150€</p>
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -483,7 +488,7 @@
               <div class="prodcard">
                 <h5>Меню</h5>
                 <p>Готовое меню на неделю <br/> 50€</p>
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -495,7 +500,7 @@
               <div class="prodcard">
                 <h5>Тренинг "Код полноценного питания"</h5>
                 <p>8ми часовой оффлайн тренинг <br/> 50€/человек (минимум 8 чел.)</p>
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -506,7 +511,7 @@
               <div class="prodcard">
                 <h5>Меню</h5>
                 <p>Готовое меню на неделю <br/> 50€</p>
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -518,7 +523,7 @@
               <div class="prodcard">
                 <h5>Тренинг "Код полноценного питания"</h5>
                 <p>8ми часовой оффлайн тренинг <br/> 50€/человек (минимум 8 чел.)</p>
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -531,7 +536,7 @@
               <div class="prodcard"><h5>T-Club</h5>
                 <p> Трансформационный клуб для женщин <br/> 25€/месяц</p>
                 
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -542,7 +547,7 @@
               <div class="prodcard"><h5>T-Club</h5>
                 <p> Трансформационный клуб для женщин <br/> 25€/месяц</p>
                 
-                <a href="#">
+                <a href="https://www.instagram.com/ciumacova.elena/">
                   <button class="btn-more">Подробнее</button>
                 </a>
               </div>
@@ -635,8 +640,8 @@
         
     </main>
     <footer>
-      <div class="footer container">
-        <img src="./logo/Logo-footer.svg" alt="logo" />
+      <div class="footer container"> <a href="./index.html"><img src="./logo/Logo-footer.svg" alt="logo" /></a>
+        
         <div class="contacts">
           <p class="footer-item-header">Контакты</p>
           <ul class="footer-item-txt">
