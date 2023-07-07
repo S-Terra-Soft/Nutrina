@@ -1,2 +1,2 @@
-alertify.set("notifier", "position", "top-right");
-alertify.success("Ready!");
+// alertify.set("notifier", "position", "top-right");
+// alertify.success("Ready!");
