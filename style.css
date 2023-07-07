@@ -878,6 +878,9 @@ footer {
   transition: transform 0.5s;
 >>>>>>> 8e591b1 (version1.0)
 }
+.mobile-logo {
+  display: none;
+}
 
 @media (max-width: 1024px) {
   h3 {
@@ -1052,9 +1055,6 @@ footer {
   .navigation {
     display: none;
   }
-
-}
-@media (max-width: 425px) {
   #burger {
     border: none;
     background: none;
