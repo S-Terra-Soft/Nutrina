@@ -10,7 +10,11 @@
 }
 
 .form {
+<<<<<<< HEAD
   min-height: 50vh;
+=======
+  height: 100vh;
+>>>>>>> 2e90957 (last fixes)
   background-color: white;
   overflow: hidden;
   display: grid;
@@ -92,3 +96,74 @@ input::placeholder {
   z-index: 2;
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 425px) {
+  .close-consult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+  }
+  form h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .decoration {
+    display: none;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  form {
+    padding: 30px 40px;
+  }
+  form .btn-more {
+    margin-top: 50px;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+  form label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  form input {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  form h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  form .btn-more {
+    margin-top: 40px;
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  form label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  form input {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  form {
+    padding: 30px 30px;
+  }
+}
+>>>>>>> 2e90957 (last fixes)
