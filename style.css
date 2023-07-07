@@ -879,6 +879,9 @@ footer {
   transform: translateX(-120vw);
   transition: transform 0.5s;
 }
+.mobile-logo {
+  display: none;
+}
 
 @media (max-width: 1024px) {
   h3 {
@@ -1049,6 +1052,17 @@ footer {
   }
   .navigation {
     display: none;
+  }
+  .mobile-logo {
+    min-width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    align-self: center;
+    font-weight: 500;
   }
   #burger {
     border: none;
