@@ -1043,9 +1043,6 @@ footer {
   }
 }
 @media (max-width: 675px) {
-  #img-consult {
-    display: none;
-  }
   .block_one strong {
     font-size: 30px;
     line-height: 55px;
