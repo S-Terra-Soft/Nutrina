@@ -152,6 +152,7 @@ span {
   }
 }
 @media (max-width: 768px) {
+<<<<<<< HEAD
   a {
     font-size: 18px;
   }
@@ -193,19 +194,21 @@ span {
   .heading_consult span {
     font-size: 35px;
   }
+=======
+>>>>>>> 68a14f0 (big final fixes v1)
   a {
     font-size: 18px;
   }
 }
+@media (max-width: 675px) {
+  .grid-ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 425px) {
   h4 {
-    line-height: 25px;
-  }
-  .btn-secondary {
-    width: 335px;
-    height: 65px;
-    font-size: 19px;
-    margin-top: 15px;
+    font-size: 4.5vw;
   }
   .question,
   .question2 {
@@ -223,7 +226,7 @@ span {
   .grid-ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 5px;
+    gap: 15px;
 
     padding: 10px 0;
   }

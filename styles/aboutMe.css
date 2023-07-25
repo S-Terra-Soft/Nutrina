@@ -99,6 +99,7 @@ main > .container {
     padding-bottom: 40px;
   }
   #background {
+<<<<<<< HEAD
     top: 50px;
   }
 }
@@ -113,9 +114,18 @@ main > .container {
   #background {
     top: 10vw;
   }
+=======
+    top: 7vw;
+  }
+}
+@media (max-width: 675px) {
+>>>>>>> 68a14f0 (big final fixes v1)
   .about {
     gap: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #background {
+    top: 50px;
   }
 }
