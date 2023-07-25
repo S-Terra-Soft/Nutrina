@@ -7,7 +7,7 @@
   --btn-bg: #d4d2d0;
   --shadow: rgba(0, 0, 0, 0.25);
 }
-p {
+main p {
   text-indent: 20px;
   line-height: 1.4rem;
 }
@@ -37,6 +37,7 @@ span2 {
   flex-direction: column;
   gap: 30px;
 }
+
 #about1 {
   background-color: var(--btn-bg);
 }
@@ -47,7 +48,7 @@ span2 {
 #background {
   position: absolute;
   width: 100%;
-  top: 70px;
+  top: 80px;
   height: 100%;
   z-index: -1;
   background-color: var(--color-main-bright);
@@ -68,14 +69,24 @@ main > .container {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1024px) {
+  .about-txt h {
+    font-size: 5vw;
+    line-height: normal;
+  }
+
+  #background {
+    top: 52px;
+  }
+}
 @media (max-width: 768px) {
   .about {
     gap: 10px;
   }
   h3 {
-    font-size: 30px !important;
-    text-transform: none !important;
-    line-height: 40px !important;
+    /* font-size: 30px !important; */
+    /* text-transform: none !important; */
+    /* line-height: 40px !important; */
   }
   p {
     font-size: 14px;
@@ -87,14 +98,17 @@ main > .container {
     padding-top: 30px;
     padding-bottom: 40px;
   }
+  #background {
+    top: 7vw;
+  }
 }
 @media (max-width: 675px) {
-  .navigation {
-    display: none;
-  }
   .about {
     gap: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #background {
+    top: 50px;
   }
 }
