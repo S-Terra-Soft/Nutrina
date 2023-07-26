@@ -99,7 +99,7 @@ main > .container {
     padding-bottom: 40px;
   }
   #background {
-    top: 7vw;
+    top: 50px;
   }
 }
 @media (max-width: 675px) {
@@ -108,7 +108,9 @@ main > .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+}
+@media (max-width: 480px) {
   #background {
-    top: 50px;
+    top: 10vw;
   }
 }
