@@ -1187,8 +1187,8 @@ footer {
     line-height: 50px;
   }
   .btn-secondary {
-    width: 290px;
-    height: 60px;
+    max-width: 290px;
+    max-height: 60px;
     font-size: 17px;
   }
   .container h2 {
@@ -1282,7 +1282,7 @@ footer {
     line-height: 20px;
   }
   .consult-header {
-    font-size: 28px;
+    font-size: 10vw;
     line-height: 35px;
   }
   .consult-register {
@@ -1297,7 +1297,7 @@ footer {
 }
 @media (max-width: 320px) {
   .block_one strong {
-    font-size: 25px;
+    font-size: 8vw;
     line-height: 50px;
   }
 
@@ -1316,5 +1316,10 @@ footer {
   .question_txt p {
     font-size: 14px;
     line-height: 18px;
+  }
+  .btn-secondary {
+    font-size: 5.25vw;
+    height: 30vw;
+    width: 85vw;
   }
 }
