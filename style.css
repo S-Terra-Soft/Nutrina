@@ -1029,7 +1029,7 @@ footer {
     justify-items: center;
   }
   .heading_consult span {
-    font-size: 40px;
+    font-size: 11vw;
   }
   .heading_consult {
     font-size: 20px;
@@ -1100,6 +1100,17 @@ footer {
   }
   .navigation {
     display: none;
+  }
+  .mobile-logo {
+    min-width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    align-self: center;
+    font-weight: 500;
   }
   #burger {
     border: none;
