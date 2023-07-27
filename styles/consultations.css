@@ -21,7 +21,7 @@ h4 {
   font-size: 46px;
 }
 .bg-cont {
-  background-image: url(/images/consalt.jpg);
+  background-image: url(../images/consalt.jpg);
   height: auto;
   background-size: cover;
   background-position: center;
