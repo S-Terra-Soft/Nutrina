@@ -1,17 +1,24 @@
-p {
+main p,
+main ol,
+main ul {
   text-indent: 20px;
   line-height: 1.4rem;
+  list-style-position: inside;
 }
 h5 {
   padding-bottom: 20px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-style: italic;
 }
 .articl {
-  padding: 100px 20px 0 20px;
-  border-top: 1px solid lightgray;
+  padding: 50px 20px;
+  border-bottom: 1px solid lightgray;
 }
+
 h3 {
   font-size: 40px;
 }

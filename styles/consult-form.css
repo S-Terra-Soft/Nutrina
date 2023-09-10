@@ -10,7 +10,7 @@
 }
 
 .form {
-  height: 100vh;
+  min-height: 50vh;
   background-color: white;
   overflow: hidden;
   display: grid;
@@ -20,10 +20,14 @@
   border-radius: 30px;
 
   box-shadow: 0px 0px 20px var(--shadow);
+  position: relative;
+
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 form {
-  width: 100%;
+  /* width: 100%; */
   padding: 30px 50px;
   display: flex;
   flex-direction: column;
@@ -34,6 +38,7 @@ form h3 {
   font-size: 36px;
   line-height: unset;
   text-align: start;
+  padding-right: 30px;
 }
 form .btn-more {
   margin-top: 60px;
@@ -66,7 +71,8 @@ input::placeholder {
   height: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 .deco {
@@ -87,6 +93,24 @@ input::placeholder {
   width: 100%;
 }
 
+#close-consult {
+  position: absolute;
+  font-size: 40px;
+  top: 25px;
+  right: 35px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .decoration {
+    display: none;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 425px) {
   .close-consult {
     display: flex;
@@ -96,9 +120,8 @@ input::placeholder {
     top: 5%;
     right: 10%;
     border: 1px solid black;
-    border-radius: 50%;
-    width: 2em;
-    height: 2em;
+    border-radius: 25%;
+    padding: 10px;
   }
   form h3 {
     margin-bottom: 10px;
@@ -109,8 +132,19 @@ input::placeholder {
     display: none;
   }
   .form {
-    display: grid;
-    grid-template-columns: 1fr;
+    height: max-content;
+  }
+  #close-consult {
+    top: 16px;
+    right: 18px;
+  }
+  .close-consult a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 20px;
+    width: 20px;
   }
   form {
     padding: 30px 40px;
@@ -131,7 +165,7 @@ input::placeholder {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   form h3 {
     margin-bottom: 10px;
     font-size: 25px;
