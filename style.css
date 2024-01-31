@@ -1343,3 +1343,65 @@ footer {
   }
 >>>>>>> 8e591b1 (version1.0)
 }
+
+
+
+
+
+/*//////////////////////////////////////////////*/
+/*new styles*/
+body {
+  background-color: #435147 !important;
+}
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#text {
+  min-width: 378px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  /*background-color: rgb(255, 255, 255);*/
+}
+#text p {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+}
+#img {
+  position: absolute;
+  top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  color: white;
+}
+#img img {
+  width: 45px;
+  margin-top: 25px;
+}
+#instagram {
+  width: 31px;
+  height: 29px;
+  background-image: url("images/social_3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#link {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#link p {
+  font-size: 1.5rem;
+}
